@@ -17,7 +17,7 @@ function Homepage(props) {
           <div>
         <Link to='/addproduct'>Add Product</Link>
         <Link to='/modifyproduct'>Edit Product</Link>
-        <Link to='/userdata'>All User Product</Link>
+        <Link to='/userdata'>All User</Link>
       </div>
         </>
     );
