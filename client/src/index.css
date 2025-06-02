@@ -1,0 +1,7 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.hv:hover{
+    box-shadow: 10px 10px 20px grey;
+    transition: ease-in-out cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}

@@ -1,0 +1,19 @@
+import React from 'react';
+import Product from './Product';
+
+function Homepage(props) {
+    return (
+        <>
+        <div className='container-fluid'>
+            <h1 className='text-center'>Welcome to Brands <span className='text-center text-danger'>Era</span></h1>
+            <h4 className='text-center text-danger'>Get the Latest Brand Styles here...</h4>
+        </div>
+
+        <div className='container-fluid'>
+            <Product/>
+        </div>
+        </>
+    );
+}
+
+export default Homepage;
