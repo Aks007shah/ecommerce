@@ -12,6 +12,12 @@ function Homepage(props) {
         <div className='container-fluid'>
             <Product/>
         </div>
+
+          <div>
+        <Link to='/addproduct'>Add Product</Link>
+        <Link to='/modifyproduct'>Edit Product</Link>
+        <Link to='/userdata'>All User Product</Link>
+      </div>
         </>
     );
 }
