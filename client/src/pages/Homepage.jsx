@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from './Product';
+import { Link } from 'react-router-dom';
 
 function Homepage(props) {
     return (
