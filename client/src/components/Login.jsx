@@ -3,7 +3,7 @@ import { AuthContext } from '../context/AuthContext';
 
 function Login(props) {
 
-    const {login, msg, setMsg, user} = useContext(AuthContext)
+    const {login, msg, setMsg} = useContext(AuthContext)
 
     const [userData, setUserData] = useState({
         name: "",

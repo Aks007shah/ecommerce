@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import SingleProduct from "./components/SingleProduct";
 import AddProduct from "./components/AddProduct";
 import ModifyProduct from "./components/ModifyProduct";
-import { AuthContent, AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./context/AuthContext";
 import Unauthorized from "./components/Unauthorized";
 import AdminRoute from "./Routes/ProtectedRoute";
 import AllUsers from "./components/AllUsers";

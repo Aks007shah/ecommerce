@@ -9,7 +9,7 @@ function SingleProduct() {
 
   useEffect(() => {
     fetchProduct();
-  }, []);
+  });
 
   const fetchProduct = async () => {
     try {

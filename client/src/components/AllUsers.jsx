@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../context/AuthContext";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -10,7 +10,7 @@ function AllUsers(props) {
     if (userData) {
       getUser();
     }
-  }, []);
+  });
 
   const toggleAdmin = async (id, currentStatus) => {
     try {
@@ -41,6 +41,9 @@ function AllUsers(props) {
     <div className="container">
       <div className="row">
         <div className="col-sm-10">
+        <div>
+          {msg}
+        </div>
           <table className="table table-primary">
             <thead>
               <tr>
