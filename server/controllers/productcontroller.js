@@ -3,14 +3,19 @@ const authModal = require("../models/Auth");
 
 class Product {
   async getAllProducts(req, res) {
-    const getData = await productModel.find({ isDeleted: false });
-
-    if (getData) {
-      res
-        .status(200)
-        .json({ message: "Products Fetched Successfully", data: getData });
+    try {
+      const getData = await productModel.find({ isDeleted: false });
+  
+      if (getData) {
+        res
+          .status(200)
+          .json({ message: "Products Fetched Successfully", data: getData });
+      }
+      res.status(404).json({ message: "Products Not Found" });
+    } catch (error) {
+      console.error("❌ Backend Error in getAllProducts:", error);
+      res.status(500).json({ message: "Internal Server Error", error }); 
     }
-    res.status(404).json({ message: "Products Not Found" });
   }
 
   async getSingleProduct(req, res) {
@@ -85,8 +90,6 @@ class Product {
     return res.status(500).json({ message: "Internal Server Error", error });
   }
 }
-
-
 
   async deleteProduct(req, res) {
     const { id } = req.body;

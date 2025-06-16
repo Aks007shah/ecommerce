@@ -26,6 +26,7 @@ function SingleProduct() {
   };
 
   if (!product) return <div>Loading...</div>;
+  if (error) return <div>Something Went Wrong...</div>;
 
   return (
     <div className="container py-5">
